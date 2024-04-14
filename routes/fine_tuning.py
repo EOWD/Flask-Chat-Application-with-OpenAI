@@ -15,7 +15,7 @@ def fine_tune():
     # Ensure your API key is set as an environment variable
 
     # Hardcoded file path to your dataset
-    file_path = 'biostars_l.jsonl'  
+    file_path = 'FineTunning_file1.jsonl'  
 
     # Check if the file exists
     if not os.path.exists(file_path):
@@ -31,7 +31,7 @@ def fine_tune():
     # Initiate fine-tuning with the uploaded file
     try:
         fine_tuning_response = client.fine_tuning.jobs.create(training_file=file_id,
-        model='ft:gpt-3.5-turbo-0125:intellikaam::9AHKuuGS')
+        model='ft:gpt-3.5') # update your base model for fine-tuning
         model_id = fine_tuning_response.id
         return jsonify({"message": "Fine-tuning initiated", "model_id": model_id}), 200
     except Exception as e:

@@ -40,7 +40,7 @@ register_routes(app)
 
 @app.route('/')
 def home():
-    return "Hello, Flask with MongoDB!"
+    return "Hello, Flask MongoDB "
 
 if __name__ == '__main__':
     app.run(debug=True)
