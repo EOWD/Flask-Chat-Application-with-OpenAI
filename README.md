@@ -21,7 +21,7 @@ To run this application locally, follow these steps:
 
 2. Install dependencies:
    ```bash
-   cd BreadcrumbsFlask-Chat-Application-with-OpenAI
+   cd Flask-Chat-Application-with-OpenAI
 
    pip install -r requirements.txt
    ```
