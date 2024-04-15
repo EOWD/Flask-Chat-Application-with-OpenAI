@@ -38,7 +38,7 @@ def chat():
             user_name = 'Unknown'
             user_occupation = 'Bio-tech specialist'
 
-        system_message = f"You are a helpful assistant specialized in Bio-tech always answer in a professional but yet human like manner, the users job is  {user_occupation}, and users name is {user_name} ,use this to personalize response. If asked any questions out of this field, respond with something like (i am a specialized ai model for bio-tech)"
+        system_message = f"You are a helpful assistant always answer in a professional but yet human like manner, the users job is  {user_occupation}, and users name is {user_name} ,use this to personalize response. If asked any questions out of this field, respond with something like (i am a specialized ai model for 'add your specialization')" # here you can prompt engineer to customize the model based on your desired field or tune  
         messages = [
             {"role": "system", "content": system_message}
         ]

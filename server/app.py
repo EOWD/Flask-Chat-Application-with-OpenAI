@@ -10,7 +10,7 @@ from pymongo import MongoClient
 load_dotenv()
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": os.getenv('ORIGIN')}})
+cors = CORS(app, resources={r"/*": {"origins": os.getenv('ORIGIN')}}) 
 
 
 app.config['JWT_SECRET_KEY'] = os.getenv('SECRET_KEY')
