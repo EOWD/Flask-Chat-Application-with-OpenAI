@@ -1,10 +1,17 @@
 
 # Flask Chat Application
 
-This is a Flask-based chat application that utilizes the OpenAI GPT-3 model to provide interactive responses to users. The application allows users to engage in chat conversations and receive intelligent responses based on the context of the conversation.
+This Flask-based chat application combines MongoDB, OpenAI's GPT-3 model, and secure authentication features to deliver an interactive and intelligent chat experience. It is configured with JWT token verification, basic authentication using bcrypt, and supports fine-tuning of AI models using JSON files.
+
+## Key Components
+
+Flask Server: Utilizes Flask, a Python microframework, to handle HTTP requests and responses.
+OpenAI Integration: Integrates OpenAI's powerful GPT-3 model for generating intelligent chat responses .
+MongoDB Database: Uses MongoDB as the database backend for storing user information and chat history.
+Authentication Middleware: Implements JWT token verification and bcrypt for secure user authentication.
+Fine-Tuning Capabilities: Supports fine-tuning of AI models by leveraging JSON files for custom model configurations.
 
 ## Installation
-
 To run this application locally, follow these steps:
 
 1. Clone the repository:
