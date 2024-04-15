@@ -103,7 +103,8 @@ Initiate a chat conversation with the AI model.
 1. Use Postman or any API client to interact with the endpoints.
 2. Register a new user using the `/signup` endpoint.
 3. Authenticate and obtain an access token using the `/auth/login` endpoint.
-4. Start a chat conversation using the `/chat` endpoint by providing the user ID and input message.
+4. JWT TOKEN Verification `/auth/verify`
+5. Start a chat conversation using the `/chat` endpoint by providing the user ID and input message.
 ```
 
-You can copy the above Markdown content and paste it into a `README.md` file in your project directory. Make sure to replace placeholders like `<repository_url>`, `<your_openai_api_key>`, `<your_openai_model_name>`, and `<your_mongodb_uri>` with the actual values relevant to your application. This Markdown file will provide clear instructions and examples for using and interacting with your Flask chat application.
+
